@@ -1,7 +1,7 @@
 # 🎮 Wordle Clone
 
 Proyek sederhana yang dibuat menggunakan **HTML**, **CSS**, dan **JavaScript**.  
-Kami membuat project ini karena kami gemar memainkan Wordle dan tertarik mereplikasi logika permainannya. Proyek ini bertujuan sebagai latihan logika dan pengembangan web dasar.
+Project ini dibuat karena kami gemar memainkan Wordle dan tertarik mereplikasi logika permainannya. Proyek ini bertujuan sebagai latihan logika dan pengembangan web dasar.
 
 ## 🕹️ Fitur
 - Menebak kata dalam 6 percobaan
