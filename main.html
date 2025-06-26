@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle-Indonesia</title>
+</head>
+<body>
+    <h1>Wordle-Indonesia</h1>
+    <dialog id="dialog">
+        <div class="wrapper">
+            <h2>Selamat anda berhasil menebak katanya!</h2>
+        </div>
+    </dialog>
+    <dialog id="dialogL">
+        <div class="wrapper">
+            <h2>Anda gagal untuk menebak kata</h2>
+        </div>
+    </dialog>
+    <div>
+        <div>
+            <form action="" id="form1">
+                <input type="text" id="form1-input1"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+                <input type="text" id="form1-input2"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+                <input type="text" id="form1-input3"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+                <input type="text" id="form1-input4"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+                <input type="text" id="form1-input5"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+            </form>
+        </div>
+        <div>
+            <form action="" id="form2">
+                <input type="text" id="form2-input1"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+                <input type="text" id="form2-input2"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+                <input type="text" id="form2-input3"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+                <input type="text" id="form2-input4"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+                <input type="text" id="form2-input5"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+            </form>
+        </div>
+        <div>
+            <form action="" id="form3">
+                <input type="text" id="form3-input1"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+                <input type="text" id="form3-input2"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+                <input type="text" id="form3-input3"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'> 
+                <input type="text" id="form3-input4"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+                <input type="text" id="form3-input5"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+            </form>
+        </div><div>
+            <form action="" id="form4">
+                <input type="text" id="form4-input1"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+                <input type="text" id="form4-input2"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+                <input type="text" id="form4-input3"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+                <input type="text" id="form4-input4"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+                <input type="text" id="form4-input5"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+            </form>
+        </div>
+        <div>
+            <form action="" id="form5">
+                <input type="text" id="form5-input1"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+                <input type="text" id="form5-input2"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+                <input type="text" id="form5-input3"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+                <input type="text" id="form5-input4"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+                <input type="text" id="form5-input5"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+            </form>
+        </div>
+        <div>
+            <form action=""  id="form6">
+                <input type="text" id="form6-input1"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+                <input type="text" id="form6-input2"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+                <input type="text" id="form6-input3"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+                <input type="text" id="form6-input4"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+                <input type="text" id="form6-input5"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+            </form>
+        </div>
+        <button id="btn" onclick="check()">Masukkan</button>
+        <button id="btn-reset" onclick="resetGame()" >Mulai ulang</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+
+</html>
