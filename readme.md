@@ -11,7 +11,7 @@ Project ini dibuat karena kami gemar memainkan Wordle dan tertarik mereplikasi l
 ## 🚀 Cara Menjalankan
 1. Clone repositori ini:
    ```bash
-   git clone https://github.com/username/nama-repo.git
+   https://github.com/ZPINXD/Wordle-Indonesia-Project.git
 
 
 
