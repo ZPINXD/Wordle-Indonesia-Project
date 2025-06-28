@@ -69,13 +69,17 @@
         <button id="btn-reset" class="bg-white text-sm font-semibold p-1.5 rounded-sm" onclick="resetGame()">Mulai ulang</button>
     </div>
     
-    <dialog id="dialog" class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 drop-shadow-2xl wrapper text-center bg-green-600 border-2 space-y-1 p-2 rounded-md">
-        <h2 class="text-lg font-semibold text-white">Selamat anda berhasil menebak katanya!</h2>
-        <p class="text-sm text-gray-300">(Klik di luar kotak untuk keluar menutup pesan ini)</p>
+    <dialog id="dialog" class=" fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 drop-shadow-2xl text-center bg-green-600 border-2 space-y-1 p-2 rounded-md">
+        <div class = wrapper>
+            <h2 class="text-lg font-semibold text-white">Selamat anda berhasil menebak katanya!</h2>
+            <p class="text-sm text-gray-300">(Klik di luar kotak untuk keluar menutup pesan ini)</p>
+        </div>
     </dialog>
-    <dialog id="dialogL" class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 drop-shadow-2xl wrapper text-center bg-red-500 border-2 space-y-1 p-2 rounded-md">
+    <dialog id="dialogL" class=" fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 drop-shadow-2xl  text-center bg-red-500 border-2 space-y-1 p-2 rounded-md">
+        <div class = wrapper>
         <h2 class="text-lg font-semibold text-white">Anda gagal untuk menebak kata</h2>
         <p class="text-sm text-gray-300">(Klik di luar kotak untuk keluar menutup pesan ini)</p>
+        </div>
     </dialog>
     
     <footer class="pt-18">
