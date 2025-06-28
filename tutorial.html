@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet">
+    <title>Wordle Indonesia</title>
+</head>
+<body class="bg-gray-300 flex flex-col space-y-2 p-7">
+    <div class="relative min-h-screen">
+        <button onclick="location.href='main.html'" class="fixed top-4 right-4 p-2 z-50">
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 0 24 24" width="40" class="game-icon" data-testid="icon-close"><path fill="var(--color-tone-1)" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+        <h1 class="text-4xl font-bold">Cara Bermain</h1>
+        <h2 class="text-2xl font-semibold">Tebak Wordle dalam 6 kali percobaan</h2>
+        <p>•⁠ Setiap tebakan harus terdiri dari 5 huruf yang valid.</p>
+        <p>•⁠ Warna petak akan berubah untuk menunjukkan seberapa dekat tebakan Anda dengan kata tersebut.</p>
+        <h2 class="text-2xl font-semibold">Contoh</h2>
+        <div class="flex space-x-2">
+            <p class="flex items-center justify-center text-xl font-semibold w-10 h-10 border-2 border-gray-600 rounded-sm bg-green-600 text-white">S</p>
+            <p class="flex items-center justify-center text-xl font-semibold w-10 h-10 border-2 border-gray-600 rounded-sm bg-white">E</p>
+            <p class="flex items-center justify-center text-xl font-semibold w-10 h-10 border-2 border-gray-600 rounded-sm bg-white">L</p>
+            <p class="flex items-center justify-center text-xl font-semibold w-10 h-10 border-2 border-gray-600 rounded-sm bg-white">A</p>
+            <p class="flex items-center justify-center text-xl font-semibold w-10 h-10 border-2 border-gray-600 rounded-sm bg-white">M</p>
+        </div>
+        <p>S ada di dalam kata dan di tempat yang benar.</p>
+        <div class="flex space-x-2">
+            <p class="flex items-center justify-center text-xl font-semibold w-10 h-10 border-2 border-gray-600 rounded-sm bg-white">K</p>
+            <p class="flex items-center justify-center text-xl font-semibold w-10 h-10 border-2 border-gray-600 rounded-sm bg-white">A</p>
+            <p class="flex items-center justify-center text-xl font-semibold w-10 h-10 border-2 border-gray-600 rounded-sm bg-white">L</p>
+            <p class="flex items-center justify-center text-xl font-semibold w-10 h-10 border-2 border-gray-600 rounded-sm bg-amber-300 text-white">I</p>
+            <p class="flex items-center justify-center text-xl font-semibold w-10 h-10 border-2 border-gray-600 rounded-sm bg-white">S</p>
+        </div>
+        <p>I ada dalam kata tapi di tempat yang salah.</p>
+        <div class="flex space-x-2">
+            <p class="flex items-center justify-center text-xl font-semibold w-10 h-10 border-2 border-gray-600 rounded-sm bg-white">T</p>
+            <p class="flex items-center justify-center text-xl font-semibold w-10 h-10 border-2 border-gray-600 rounded-sm bg-white">A</p>
+            <p class="flex items-center justify-center text-xl font-semibold w-10 h-10 border-2 border-gray-600 rounded-sm bg-gray-600 text-white">P</p>
+            <p class="flex items-center justify-center text-xl font-semibold w-10 h-10 border-2 border-gray-600 rounded-sm bg-white">I</p>
+            <p class="flex items-center justify-center text-xl font-semibold w-10 h-10 border-2 border-gray-600 rounded-sm bg-white">R</p>
+        </div>
+        <p>P tidak ada dalam kata di tempat mana pun.</p>
+    </div>
+</body>
+</html>
