@@ -6,85 +6,131 @@
     <link href="./src/output.css" rel="stylesheet">
     <title>Wordle Indonesia</title>
 </head>
-<body class="bg-gray-200 flex flex-col items-center min-h-screen p-7">
-    <header class="bg-white fixed top-0 left-0 w-full flex items-center shadow-md z-10">
+<body class="bg-yellow-50 flex flex-col items-center min-h-screen p-7">
+    <header class="bg-pink-300 fixed top-0 left-0 w-full flex items-center shadow-md z-10">
         <div class="container mx-auto flex justify-between items-center px-4">
-            <h1 class="text-2xl font-bold m-5">
-                Wordle <span class="text-red-600">Indonesia</span>
+            <h1 class="text-2xl font-bold m-5 text-white">
+                Wordle <span class="text-rose-500">Indonesia</span>
             </h1>
-            <button onclick="location.href='tutorial.html'" class="m-5">
-                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" class="game-icon" data-testid="icon-forum">
-                    <path fill="var(--color-tone-1)" d="M15.4538 15.0078C17.2881 13.8544 18.5 11.818 18.5 9.5C18.5 5.91015 15.5899 3 12 3C8.41015 3 5.5 5.91015 5.5 9.5C5.5 11.818 6.71194 13.8544 8.54624 15.0078C9.37338 15.5279 10 16.4687 10 17.6014V20H14V17.6014C14 16.4687 14.6266 15.5279 15.4538 15.0078ZM16.5184 16.7009C16.206 16.8974 16 17.2323 16 17.6014V20C16 21.1046 15.1046 22 14 22H10C8.89543 22 8 21.1046 8 20V17.6014C8 17.2323 7.79404 16.8974 7.48163 16.7009C5.08971 15.1969 3.5 12.5341 3.5 9.5C3.5 4.80558 7.30558 1 12 1C16.6944 1 20.5 4.80558 20.5 9.5C20.5 12.5341 18.9103 15.1969 16.5184 16.7009ZM8 17H16V21C16 22.1046 15.1046 23 14 23H10C8.89543 23 8 22.1046 8 21V17Z"></path>
-                </svg>
+            <button onclick="document.getElementById('dialogTutorial').showModal()" class="m-5 bg-emerald-100 text-emerald-800 border-2 border-emerald-300 text-sm font-semibold p-2 rounded-full hover:bg-emerald-200 hover:scale-110 transition duration-300 ease-in-out flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" class="game-icon" data-testid="icon-forum">
+                    <path fill="#047857" d="M15.4538 15.0078C17.2881 13.8544 18.5 11.818 18.5 9.5C18.5 5.91015 15.5899 3 12 3C8.41015 3 5.5 5.91015 5.5 9.5C5.5 11.818 6.71194 13.8544 8.54624 15.0078C9.37338 15.5279 10 16.4687 10 17.6014V20H14V17.6014C14 16.4687 14.6266 15.5279 15.4538 15.0078ZM16.5184 16.7009C16.206 16.8974 16 17.2323 16 17.6014V20C16 21.1046 15.1046 22 14 22H10C8.89543 22 8 21.1046 8 20V17.6014C8 17.2323 7.79404 16.8974 7.48163 16.7009C5.08971 15.1969 3.5 12.5341 3.5 9.5C3.5 4.80558 7.30558 1 12 1C16.6944 1 20.5 4.80558 20.5 9.5C20.5 12.5341 18.9103 15.1969 16.5184 16.7009ZM8 17H16V21C16 22.1046 15.1046 23 14 23H10C8.89543 23 8 22.1046 8 21V17Z"></path>
+                  </svg>
             </button>
         </div>
     </header>
     
-    <div class="pt-26 m-5 space-y-2 mx-auto">
+    <div class="pt-30 m-5 space-y-2 mx-auto">
         <form action="" id="form1">
-            <input class="text-3xl font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-white" type="text" id="form1-input1"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
-            <input class="text-3xl font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-white" type="text" id="form1-input2"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
-            <input class="text-3xl font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-white" type="text" id="form1-input3"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
-            <input class="text-3xl font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-white" type="text" id="form1-input4"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
-            <input class="text-3xl font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-white" type="text" id="form1-input5"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+            <input class="text-3xl text-gray-800 font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-purple-100" type="text" id="form1-input1"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+            <input class="text-3xl text-gray-800 font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-purple-100" type="text" id="form1-input2"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+            <input class="text-3xl text-gray-800 font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-purple-100" type="text" id="form1-input3"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+            <input class="text-3xl text-gray-800 font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-purple-100" type="text" id="form1-input4"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+            <input class="text-3xl text-gray-800 font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-purple-100" type="text" id="form1-input5"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
         </form>
         <form action="" id="form2">
-            <input class="text-3xl font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-white" type="text" id="form2-input1"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
-            <input class="text-3xl font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-white" type="text" id="form2-input2"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
-            <input class="text-3xl font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-white" type="text" id="form2-input3"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
-            <input class="text-3xl font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-white" type="text" id="form2-input4"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
-            <input class="text-3xl font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-white" type="text" id="form2-input5"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+            <input class="text-3xl text-gray-800 font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-purple-100" type="text" id="form2-input1"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+            <input class="text-3xl text-gray-800 font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-purple-100" type="text" id="form2-input2"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+            <input class="text-3xl text-gray-800 font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-purple-100" type="text" id="form2-input3"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+            <input class="text-3xl text-gray-800 font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-purple-100" type="text" id="form2-input4"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+            <input class="text-3xl text-gray-800 font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-purple-100" type="text" id="form2-input5"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
         </form>
         <form action="" id="form3">
-            <input class="text-3xl font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-white" type="text" id="form3-input1"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
-            <input class="text-3xl font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-white" type="text" id="form3-input2"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
-            <input class="text-3xl font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-white" type="text" id="form3-input3"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'> 
-            <input class="text-3xl font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-white" type="text" id="form3-input4"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
-            <input class="text-3xl font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-white" type="text" id="form3-input5"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+            <input class="text-3xl text-gray-800 font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-purple-100" type="text" id="form3-input1"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+            <input class="text-3xl text-gray-800 font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-purple-100" type="text" id="form3-input2"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+            <input class="text-3xl text-gray-800 font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-purple-100" type="text" id="form3-input3"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'> 
+            <input class="text-3xl text-gray-800 font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-purple-100" type="text" id="form3-input4"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+            <input class="text-3xl text-gray-800 font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-purple-100" type="text" id="form3-input5"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
         </form>
         <form action="" id="form4">
-            <input class="text-3xl font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-white" type="text" id="form4-input1"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
-            <input class="text-3xl font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-white" type="text" id="form4-input2"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
-            <input class="text-3xl font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-white" type="text" id="form4-input3"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
-            <input class="text-3xl font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-white" type="text" id="form4-input4"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
-            <input class="text-3xl font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-white" type="text" id="form4-input5"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+            <input class="text-3xl text-gray-800 font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-purple-100" type="text" id="form4-input1"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+            <input class="text-3xl text-gray-800 font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-purple-100" type="text" id="form4-input2"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+            <input class="text-3xl text-gray-800 font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-purple-100" type="text" id="form4-input3"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+            <input class="text-3xl text-gray-800 font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-purple-100" type="text" id="form4-input4"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+            <input class="text-3xl text-gray-800 font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-purple-100" type="text" id="form4-input5"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
         </form>
         <form action="" id="form5">
-            <input class="text-3xl font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-white" type="text" id="form5-input1"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
-            <input class="text-3xl font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-white" type="text" id="form5-input2"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
-            <input class="text-3xl font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-white" type="text" id="form5-input3"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
-            <input class="text-3xl font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-white" type="text" id="form5-input4"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
-            <input class="text-3xl font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-white" type="text" id="form5-input5"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+            <input class="text-3xl text-gray-800 font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-purple-100" type="text" id="form5-input1"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+            <input class="text-3xl text-gray-800 font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-purple-100" type="text" id="form5-input2"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+            <input class="text-3xl text-gray-800 font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-purple-100" type="text" id="form5-input3"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+            <input class="text-3xl text-gray-800 font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-purple-100" type="text" id="form5-input4"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+            <input class="text-3xl text-gray-800 font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-purple-100" type="text" id="form5-input5"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
         </form>
         <form action=""  id="form6">
-            <input class="text-3xl font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-white" type="text" id="form6-input1"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
-            <input class="text-3xl font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-white" type="text" id="form6-input2"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
-            <input class="text-3xl font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-white" type="text" id="form6-input3"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
-            <input class="text-3xl font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-white" type="text" id="form6-input4"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
-            <input class="text-3xl font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-white" type="text" id="form6-input5"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+            <input class="text-3xl text-gray-800 font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-purple-100" type="text" id="form6-input1"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+            <input class="text-3xl text-gray-800 font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-purple-100" type="text" id="form6-input2"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+            <input class="text-3xl text-gray-800 font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-purple-100" type="text" id="form6-input3"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+            <input class="text-3xl text-gray-800 font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-purple-100" type="text" id="form6-input4"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
+            <input class="text-3xl text-gray-800 font-semibold w-15 h-15 border-2 border-gray-600 rounded-sm text-center bg-purple-100" type="text" id="form6-input5"onkeydown="ValidatePassKey(this, event)"  maxlength="1" required style='text-transform:uppercase'>
         </form>
     </div>
+
     <div class="m-5 space-x-2 mx-auto">
-        <button id="btn" class="hover:bg-red-500 bg-white text-sm font-semibold p-1.5 rounded-sm" onclick="check()">Masukkan</button>
-        <button id="btn-reset" class="bg-white text-sm font-semibold p-1.5 rounded-sm" onclick="resetGame()">Mulai ulang</button>
+        <button id="btn" class="bg-pink-300 hover:bg-pink-400 hover:scale-110 transition duration-300 ease-in-out border-2 border-pink-500 text-sm text-white font-semibold p-1.5 rounded-sm" onclick="check()">Masukkan</button>
+        <button id="btn-reset" class="bg-sky-300 hover:bg-sky-400 hover:scale-110 transition duration-300 ease-in-out border-2 border-sky-500 text-sm text-white font-semibold p-1.5 rounded-sm" onclick="resetGame()">Mulai ulang</button>
     </div>
     
-    <dialog id="dialog" class=" fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 drop-shadow-2xl text-center bg-green-600 border-2 space-y-1 p-2 rounded-md">
+    <dialog id="dialog" class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 drop-shadow-2xl text-center bg-green-100 border-2 space-y-1 p-2 rounded-md">
         <div class = wrapper>
-            <h2 class="text-lg font-semibold text-white">Selamat anda berhasil menebak katanya!</h2>
-            <p class="text-sm text-gray-300">(Klik di luar kotak untuk keluar menutup pesan ini)</p>
+            <h2 class="text-lg font-semibold text-gray-800">Selamat anda berhasil menebak katanya!</h2>
+            <p class="text-sm text-gray-600">(Klik di luar kotak untuk keluar menutup pesan ini)</p>
         </div>
     </dialog>
-    <dialog id="dialogL" class=" fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 drop-shadow-2xl  text-center bg-red-500 border-2 space-y-1 p-2 rounded-md">
+    <dialog id="dialogL" class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 drop-shadow-2xl  text-center bg-rose-100 border-2 space-y-1 p-2 rounded-md">
         <div class = wrapper>
-        <h2 class="text-lg font-semibold text-white">Anda gagal untuk menebak kata</h2>
-        <p class="text-sm text-gray-300">(Klik di luar kotak untuk keluar menutup pesan ini)</p>
+        <h2 class="text-lg font-semibold text-gray-800">Anda gagal untuk menebak kata</h2>
+        <p class="text-sm text-gray-600">(Klik di luar kotak untuk keluar menutup pesan ini)</p>
         </div>
     </dialog>
-    
-    <footer class="pt-18">
-        <p class="text-gray-400">Made for Fun by Vano and Vira :D</p>
+    <dialog id="dialogTutorial" class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 overflow-y-auto max-h-[90vh]drop-shadow-2xl text-center bg-orange-50 border-2 space-y-4 p-6 rounded-md max-w-2xl w-full text-gray-800">
+        <div class="space-y-2 text-left">
+          <h1 class="text-3xl font-bold text-center">Cara Bermain</h1>
+          <h2 class="text-xl font-semibold">Tebak Wordle dalam 6 kali percobaan</h2>
+          <ul class="list-disc pl-6 text-sm">
+            <li>Setiap tebakan harus terdiri dari 5 huruf yang valid.</li>
+            <li>Warna petak akan berubah untuk menunjukkan seberapa dekat tebakan Anda dengan kata tersebut.</li>
+          </ul>
+          <h2 class="text-xl font-semibold pt-3">Contoh</h2>
+          <div>
+            <div class="flex space-x-2 mb-1">
+              <p class="flex items-center justify-center text-xl font-semibold w-10 h-10 border-2 border-gray-600 rounded-sm" style="background: rgb(168, 230, 207); color: rgb(16, 24, 40);">S</p>
+              <p class="flex items-center justify-center text-xl font-semibold w-10 h-10 border-2 border-gray-600 rounded-sm bg-white">E</p>
+              <p class="flex items-center justify-center text-xl font-semibold w-10 h-10 border-2 border-gray-600 rounded-sm bg-white">L</p>
+              <p class="flex items-center justify-center text-xl font-semibold w-10 h-10 border-2 border-gray-600 rounded-sm bg-white">A</p>
+              <p class="flex items-center justify-center text-xl font-semibold w-10 h-10 border-2 border-gray-600 rounded-sm bg-white">M</p>
+            </div>
+            <p class="text-sm mb-3">Huruf <strong>S</strong> ada di dalam kata dan di tempat yang benar.</p>
+      
+            <div class="flex space-x-2 mb-1">
+              <p class="flex items-center justify-center text-xl font-semibold w-10 h-10 border-2 border-gray-600 rounded-sm bg-white">K</p>
+              <p class="flex items-center justify-center text-xl font-semibold w-10 h-10 border-2 border-gray-600 rounded-sm bg-white">A</p>
+              <p class="flex items-center justify-center text-xl font-semibold w-10 h-10 border-2 border-gray-600 rounded-sm bg-white">L</p>
+              <p class="flex items-center justify-center text-xl font-semibold w-10 h-10 border-2 border-gray-600 rounded-sm" style="background: rgb(255, 245, 157); color: rgb(16, 24, 40);">I</p>
+              <p class="flex items-center justify-center text-xl font-semibold w-10 h-10 border-2 border-gray-600 rounded-sm bg-white">S</p>
+            </div>
+            <p class="text-sm mb-3">Huruf <strong>I</strong> ada dalam kata tetapi di tempat yang salah.</p>
+      
+            <div class="flex space-x-2 mb-1">
+              <p class="flex items-center justify-center text-xl font-semibold w-10 h-10 border-2 border-gray-600 rounded-sm bg-white">T</p>
+              <p class="flex items-center justify-center text-xl font-semibold w-10 h-10 border-2 border-gray-600 rounded-sm bg-white">A</p>
+              <p class="flex items-center justify-center text-xl font-semibold w-10 h-10 border-2 border-gray-600 rounded-sm" style="background: rgb(224, 224, 224); color: rgb(16, 24, 40);">P</p>
+              <p class="flex items-center justify-center text-xl font-semibold w-10 h-10 border-2 border-gray-600 rounded-sm bg-white">I</p>
+              <p class="flex items-center justify-center text-xl font-semibold w-10 h-10 border-2 border-gray-600 rounded-sm bg-white">R</p>
+            </div>
+            <p class="text-sm">Huruf <strong>P</strong> tidak ada dalam kata di tempat mana pun.</p>
+          </div>
+          <div class="text-center pt-4">
+            <button onclick="document.getElementById('dialogTutorial').close()" class="bg-rose-400 hover:bg-rose-600 hover:scale-110 transition duration-300 ease-in-out border-2 border-rose-500 text-sm text-white font-semibold p-1.5 rounded-sm">
+              Tutup Tutorial
+            </button>
+          </div>
+        </div>
+    </dialog>      
+
+    <footer class="pt-10">
+        <p class="text-gray-400">Made for Fun by <a href="https://www.instagram.com/vnfn.iso?igsh=MTZmN290Z216d2ZpZQ==" target="_blank" rel="noopener noreferrer" class="text-sky-300 hover:text-sky-400 transition duration-300 ease-in-out">Vano</a> and <a href="https://www.instagram.com/viraanarita?igsh=azJ3M3JhanNrMHln" target="_blank" rel="noopener noreferrer" class="text-pink-300 hover:text-pink-400 transition duration-300 ease-in-out">Vira</a> :D</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 

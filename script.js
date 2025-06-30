@@ -185,24 +185,24 @@ function check() {
     }
     for (let i = 0; i < inputs.length; i++) {
       if (inputs[i].value === wordle[i]) {
-        inputs[i].style.background = "rgb(0, 166, 62)";
-        inputs[i].style.color = "white";
+        inputs[i].style.background = "rgb(168, 230, 207)";
+        inputs[i].style.color = "rgb(16, 24, 40)";
         sisahuruf[i] = null; 
       }
     }
     
     for (let i = 0; i < inputs.length; i++) {
-      if (inputs[i].style.background !== "rgb(0, 166, 62)") {
+      if (inputs[i].style.background !== "rgb(168, 230, 207)") {
         const huruf = inputs[i].value;
         const idx = sisahuruf.findIndex(h => h && h === huruf);
         if (idx !== -1) {
-          inputs[i].style.background = "rgb(255, 210, 48)";
-          inputs[i].style.color = "white";
+          inputs[i].style.background = "rgb(255, 245, 157)";
+          inputs[i].style.color = "rgb(16, 24, 40)";
           sisahuruf[idx] = null; 
           benar = false;
         } else {
-          inputs[i].style.background = "rgb(74, 85, 101)";
-          inputs[i].style.color = "white";
+          inputs[i].style.background = "rgb(224, 224, 224)";
+          inputs[i].style.color = "rgb(16, 24, 40)";
           benar = false;
         }
       }
@@ -232,23 +232,23 @@ function check() {
       }
       for (let i = 0; i < inputs.length; i++) {
         if (inputs[i].value === wordle[i]) {
-          inputs[i].style.background = "rgb(0, 166, 62)";
-          inputs[i].style.color = "white";
+          inputs[i].style.background = "rgb(168, 230, 207)";
+          inputs[i].style.color = "rgb(16, 24, 40)";
           sisahuruf[i] = null; 
         }
       }
       for (let i = 0; i < inputs.length; i++) {
-        if (inputs[i].style.background !== "rgb(0, 166, 62)") {
+        if (inputs[i].style.background !== "rgb(168, 230, 207)") {
           const huruf = inputs[i].value;
           const idx = sisahuruf.findIndex(h => h && h === huruf);
           if (idx !== -1) {
-            inputs[i].style.background = "rgb(255, 210, 48)";
-            inputs[i].style.color = "white";
+            inputs[i].style.background = "rgb(255, 245, 157)";
+            inputs[i].style.color = "rgb(16, 24, 40)";
             sisahuruf[idx] = null;
             benar = false;
           } else {
-            inputs[i].style.background = "rgb(74, 85, 101)";
-            inputs[i].style.color = "white";
+            inputs[i].style.background = "rgb(224, 224, 224)";
+            inputs[i].style.color = "rgb(16, 24, 40)";
             benar = false;
           }
         }
@@ -276,25 +276,25 @@ function check() {
       }
       for (let i = 0; i < inputs.length; i++) {
         if (inputs[i].value === wordle[i]) {
-          inputs[i].style.background = "rgb(0, 166, 62)";
-          inputs[i].style.color = "white";
+          inputs[i].style.background = "rgb(168, 230, 207)";
+          inputs[i].style.color = "rgb(16, 24, 40)";
           sisahuruf[i] = null; 
         }
       }
   
       // Loop kedua: cek yang kuning atau abu-abu
       for (let i = 0; i < inputs.length; i++) {
-        if (inputs[i].style.background !== "rgb(0, 166, 62)") {
+        if (inputs[i].style.background !== "rgb(168, 230, 207)") {
           const huruf = inputs[i].value;
           const idx = sisahuruf.findIndex(h => h && h === huruf);
           if (idx !== -1) {
-            inputs[i].style.background = "rgb(255, 210, 48)";
-            inputs[i].style.color = "white";
+            inputs[i].style.background = "rgb(255, 245, 157)";
+            inputs[i].style.color = "rgb(16, 24, 40)";
             sisahuruf[idx] = null; 
             benar = false;
           } else {
-            inputs[i].style.background = "rgb(74, 85, 101)";
-            inputs[i].style.color = "white";
+            inputs[i].style.background = "rgb(224, 224, 224)";
+            inputs[i].style.color = "rgb(16, 24, 40)";
             benar = false;
           }
         }
@@ -323,25 +323,25 @@ function check() {
       }
       for (let i = 0; i < inputs.length; i++) {
         if (inputs[i].value === wordle[i]) {
-          inputs[i].style.background = "rgb(0, 166, 62)";
-          inputs[i].style.color = "white";
+          inputs[i].style.background = "rgb(168, 230, 207)";
+          inputs[i].style.color = "rgb(16, 24, 40)";
           sisahuruf[i] = null; 
         }
       }
   
       // Loop kedua: cek yang kuning atau abu-abu
       for (let i = 0; i < inputs.length; i++) {
-        if (inputs[i].style.background !== "rgb(0, 166, 62)") {
+        if (inputs[i].style.background !== "rgb(168, 230, 207)") {
           const huruf = inputs[i].value;
           const idx = sisahuruf.findIndex(h => h && h === huruf);
           if (idx !== -1) {
-            inputs[i].style.background = "rgb(255, 210, 48)";
-            inputs[i].style.color = "white";
+            inputs[i].style.background = "rgb(255, 245, 157)";
+            inputs[i].style.color = "rgb(16, 24, 40)";
             sisahuruf[idx] = null; 
             benar = false;
           } else {
-            inputs[i].style.background = "rgb(74, 85, 101)";
-            inputs[i].style.color = "white";
+            inputs[i].style.background = "rgb(224, 224, 224)";
+            inputs[i].style.color = "rgb(16, 24, 40)";
             benar = false;
           }
         }
@@ -370,25 +370,25 @@ function check() {
       }
       for (let i = 0; i < inputs.length; i++) {
         if (inputs[i].value === wordle[i]) {
-          inputs[i].style.background = "rgb(0, 166, 62)";
-          inputs[i].style.color = "white";
+          inputs[i].style.background = "rgb(168, 230, 207)";
+          inputs[i].style.color = "rgb(16, 24, 40)";
           sisahuruf[i] = null; 
         }
       }
   
       // Loop kedua: cek yang kuning atau abu-abu
       for (let i = 0; i < inputs.length; i++) {
-        if (inputs[i].style.background !== "rgb(0, 166, 62)") {
+        if (inputs[i].style.background !== "rgb(168, 230, 207)") {
           const huruf = inputs[i].value;
           const idx = sisahuruf.findIndex(h => h && h === huruf);
           if (idx !== -1) {
-            inputs[i].style.background = "rgb(255, 210, 48)";
-            inputs[i].style.color = "white";
+            inputs[i].style.background = "rgb(255, 245, 157)";
+            inputs[i].style.color = "rgb(16, 24, 40)";
             sisahuruf[idx] = null;
             benar = false;
           } else {
-            inputs[i].style.background = "rgb(74, 85, 101)";
-            inputs[i].style.color = "white";
+            inputs[i].style.background = "rgb(224, 224, 224)";
+            inputs[i].style.color = "rgb(16, 24, 40)";
             benar = false;
           }
         }
@@ -417,25 +417,25 @@ function check() {
       }
       for (let i = 0; i < inputs.length; i++) {
         if (inputs[i].value === wordle[i]) {
-          inputs[i].style.background = "rgb(0, 166, 62)";
-          inputs[i].style.color = "white";
+          inputs[i].style.background = "rgb(168, 230, 207)";
+          inputs[i].style.color = "rgb(16, 24, 40)";
           sisahuruf[i] = null; 
         }
       }
   
       // Loop kedua: cek yang kuning atau abu-abu
       for (let i = 0; i < inputs.length; i++) {
-        if (inputs[i].style.background !== "rgb(0, 166, 62)") {
+        if (inputs[i].style.background !== "rgb(168, 230, 207)") {
           const huruf = inputs[i].value;
           const idx = sisahuruf.findIndex(h => h && h === huruf);
           if (idx !== -1) {
-            inputs[i].style.background = "rgb(255, 210, 48)";
-            inputs[i].style.color = "white";
+            inputs[i].style.background = "rgb(255, 245, 157)";
+            inputs[i].style.color = "rgb(16, 24, 40)";
             sisahuruf[idx] = null; 
             benar = false;
           } else {
-            inputs[i].style.background = "rgb(74, 85, 101)";
-            inputs[i].style.color = "white";
+            inputs[i].style.background = "rgb(224, 224, 224)";
+            inputs[i].style.color = "rgb(16, 24, 40)";
             benar = false;
           }
         }
@@ -449,6 +449,3 @@ function check() {
       }
   }
 }
-
-
-
