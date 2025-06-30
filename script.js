@@ -123,12 +123,6 @@ fetch('./dataset/kata.json')
       word5=word.charAt(4);
       wordle = [word1, word2, word3, word4, word5];
     }
-    console.log(word1);//output dari word (hapus saja nanti)
-    console.log(word2);
-    console.log(word3);
-    console.log(word4);
-    console.log(word5);
-    console.log(wordle);
 });
 
 
